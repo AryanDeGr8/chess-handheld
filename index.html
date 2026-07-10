@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+    
+    <style>
+        :root {
+            --side-length: calc(min(100vw, 100vh)*0.8*0.33333);
+            --side-length-board: calc(min(100vw, 100vh)*0.8);
+        }
+    </style>
+</head>
+<body class="bg-white flex flex-col justify-center items-center h-[100vh] w-[100vw]">
+    <!-- <div class="text-white text-4xl text-center" id="startText">Press Space to Start!</div> -->
+    <!-- <div class="text-white" id="twosTurn" hidden>Player 2's Turn</div> -->
+
+    <div class="grid grid-cols-8 m-3 h-(--side-length-board) w-(--side-length-board) border-6 border-black" id="board" >
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+    </div>
+
+    <!-- <div class="text-white" id="onesTurn" hidden>Player 1's Turn</div> -->
+
+
+    <script src="js/chess.js"></script>
+    <script src="js/color.js"></script>
+
+</body>
+</html>
