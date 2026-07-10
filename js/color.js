@@ -6,7 +6,7 @@ function colorChessBoard() {
     if (color === "white") {
       boardSquaresArray[i].setAttribute(
         "class",
-        "bg-white h-full w-full flex items-center justify-center boardSquare",
+        "bg-white h-(--side-length) w-(--side-length) flex items-center justify-center boardSquare",
       );
       if (i % 8 !== 7) {
         color = "olive";
@@ -14,7 +14,7 @@ function colorChessBoard() {
     } else if (color === "olive") {
       boardSquaresArray[i].setAttribute(
         "class",
-        "bg-olive-500 h-full w-full flex items-center justify-center boardSquare",
+        "bg-olive-500 h-(--side-length) w-(--side-length) flex items-center justify-center boardSquare",
       );
 
       if (i % 8 !== 7) {

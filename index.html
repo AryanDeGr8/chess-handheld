@@ -8,7 +8,7 @@
     
     <style>
         :root {
-            --side-length: calc(min(100vw, 100vh)*0.8*0.33333);
+            --side-length: calc(min(100vw, 100vh)*0.8*0.125);
             --side-length-board: calc(min(100vw, 100vh)*0.8);
         }
     </style>
@@ -17,71 +17,71 @@
     <!-- <div class="text-white text-4xl text-center" id="startText">Press Space to Start!</div> -->
     <!-- <div class="text-white" id="twosTurn" hidden>Player 2's Turn</div> -->
 
-    <div class="grid grid-cols-8 m-3 h-(--side-length-board) w-(--side-length-board) border-6 border-black" id="board" >
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
-        <div class="h-full w-full flex items-center justify-center boardSquare"><div class=""></div></div>
+    <div class="grid grid-cols-8 m-3 min-h-(--side-length-board) min-w-(--side-length-board) border border-black" id="board" >
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"><img src="img/pieces/bishop-w.svg" alt=""></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"><img src="img/pieces/queen-b.svg" alt=""></div></div>
+        <div class="min-h-(--side-length) min-w-(--side-length) flex items-center justify-center boardSquare"><div class="h-(--side-length) w-(--side-length)"></div></div>
     </div>
 
     <!-- <div class="text-white" id="onesTurn" hidden>Player 1's Turn</div> -->
