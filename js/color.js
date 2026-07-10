@@ -1,5 +1,7 @@
 let boardSquaresArray = document.querySelectorAll(".boardSquare");
 
+
+
 function colorChessBoard() {
   let color = "white";
   for (let i = 0; i < boardSquaresArray.length; i++) {
