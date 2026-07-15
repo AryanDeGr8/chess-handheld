@@ -50,7 +50,50 @@ class ChessBoard {
     this.board = board;
   }
 
-  renderBoard(){
-    
+  renderBoard() {
+    let boardElement = document.getElementById("board");
+
+    boardElement.innerHTML = "";
+
+    let color = "white";
+    let i = 0;
+
+    this.board.forEach(function (element) {
+      element.forEach(function (element) {
+        let div = document.createElement("div");
+
+        if (color === "white") {
+          div.setAttribute(
+            "class",
+            "bg-white h-(--side-length) w-(--side-length) flex items-center justify-center boardSquare",
+          );
+          if (i % 8 !== 7) {
+            color = "olive";
+          }
+        } else if (color === "olive") {
+          div.setAttribute(
+            "class",
+            "bg-olive-500 h-(--side-length) w-(--side-length) flex items-center justify-center boardSquare",
+          );
+
+          if (i % 8 !== 7) {
+            color = "white";
+          }
+        }
+
+        if (element !== null) {
+          let image = element.image;
+          let imageElement = document.createElement("img");
+
+          imageElement.setAttribute("src", image);
+
+          div.appendChild(imageElement);
+        }
+
+        boardElement.appendChild(div);
+
+        i++;
+      });
+    });
   }
 }

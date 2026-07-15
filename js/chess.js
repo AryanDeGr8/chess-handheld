@@ -1,24 +1,29 @@
 let board = document.getElementById("board");
 
-let boardArray = board.childNodes;
-
 board.addEventListener("click", function (event) {
   console.log(event.target.parentNode);
 });
 
+const chessBoard = new ChessBoard();
+chessBoard.renderBoard();
+
 const game = {
-  pieces: document.querySelectorAll("img"),
+  board: chessBoard.board,
   turn: 0,
 };
 
 function rotatePieces() {
   if (game.turn) {
-    game.pieces.forEach(function (element) {
-      element.setAttribute("class", "rotate-180");
+    game.board.forEach(function (element) {
+      element.forEach(function (element) {
+        element.setAttribute("class", "rotate-180");
+      });
     });
   } else {
-    game.pieces.forEach(function (element) {
-      element.setAttribute("class", "rotate-0");
+    game.board.forEach(function (element) {
+      element.forEach(function (element) {
+        element.setAttribute("class", "rotate-0");
+      });
     });
   }
 
