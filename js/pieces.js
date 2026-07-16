@@ -1,5 +1,5 @@
 class ChessPiece {
-  constructor(color, currentSquare, moveList = [], turnsMoved = 0) {
+  constructor(color, currentSquare = 0, moveList = [], turnsMoved = 0) {
     this.color = color;
     this.moveList = moveList;
     this.currentSquare = currentSquare;
