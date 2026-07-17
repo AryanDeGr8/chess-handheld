@@ -5,10 +5,6 @@ class ChessPiece {
     this.currentSquare = currentSquare;
     this.turnsMoved = turnsMoved;
   }
-
-  makeMove() {}
-
-  checkIfMoveIsValid() {}
 }
 
 class Rook extends ChessPiece {
